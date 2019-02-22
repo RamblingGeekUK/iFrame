@@ -22,6 +22,7 @@ Module.register("iFrame",{
 		iframe.width = this.config.width;
 		iframe.height = this.config.height;
 		iframe.src =  this.config.url;
+		iframe.sandbox = "allow-same-origin allow-scripts";
 		return iframe;
 	}
 
